@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+}
+.content{
+    width: 80%;
+    min-height:150px;
+    max-height: 600px;
+    display: flex;
+    margin: 50px auto 0 auto;
+    border: 1px solid  #000;
+}
+.listMainBoard{
+    margin: 0;
+    flex: 1;
+    border: 1px solid  #000;
+
+}
+.listHeader{
+    border-bottom: 2px solid  #000;
+    text-align: center;
+}
+.listingBoard{
+    font-size: 30px;
+    max-height: 500px;
+    overflow: auto;
+}
+.listingBoard li{
+    margin: 30px;
+}
+.listingBoard input{
+    height: 30px;
+    width: 70%;
+    font-size: 20px;
+}
