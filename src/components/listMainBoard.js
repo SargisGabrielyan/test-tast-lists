@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import ListHeader from './listHeader';
 import ListingBoard from './listingBoard';
 
@@ -8,12 +7,10 @@ class ListMainBoard extends React.Component{
         return (
             <div className="listMainBoard">
                 <ListHeader count={this.props.count} />
-                <ListingBoard listID={this.props.listID} />
+                <ListingBoard listId={this.props.listId} list={this.props.list}/>
             </div>
         )
     }
 };
 
-export default connect(
-    (store) => {return {lists: store.lists};}
-)(ListMainBoard);
+export default ListMainBoard;

@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 
 class ListHeader extends React.Component{
     render() {
@@ -11,8 +10,4 @@ class ListHeader extends React.Component{
     }
 };
 
-
-
-export default connect(
-    (store) => {return {listCount: store.listCount};}
-)(ListHeader);
+export default ListHeader;

@@ -1,5 +1,4 @@
 import React from 'react';
-import {connect} from 'react-redux';
 import Content from './content';
 
 class App extends React.Component{

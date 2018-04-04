@@ -5,8 +5,8 @@ const reducer = combineReducers(reducers);
 
 const store = createStore(reducer, {
     lists: [
-        [''],
-        ['']
+        [{value: '', isText: true}],
+        [{value: '', isText: true}]
     ]
 });
 

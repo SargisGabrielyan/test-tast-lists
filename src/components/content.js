@@ -7,7 +7,7 @@ class Content extends React.Component{
         return (
             <div className="content">
                 {this.props.lists.map(function(item, i){
-                        return <ListMainBoard key={i} count={i + 1} listID={i} />
+                        return <ListMainBoard key={i} count={i + 1} listId={i} list={item}/>
                     })
                 }
             </div>
